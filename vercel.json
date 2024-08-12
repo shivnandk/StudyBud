@@ -27,7 +27,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "studybud/wsgi.py"  // Ensure this is the correct entry point
+      "dest": "studybud/wsgi.py"   
     }
   ]
 }
