@@ -64,14 +64,15 @@ WSGI_APPLICATION = 'studybud.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 DATABASES = {
     'default': {
-       'ENGINE': 'mysql.connector.django',
+       'ENGINE': 'django.db.backends.mysql',
         'NAME': 'studybud',
         'USER': 'root',
         'PASSWORD': '1234',  # Replace with your MySQL password
-        'HOST': '/cloudsql/argon-ace-432317-j9:us-central1:studybud',  # Connection name from Google Cloud
+        'HOST': '35.188.60.116',  # Connection name from Google Cloud
         'PORT': '3306',
     }
 }
+ 
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
