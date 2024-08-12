@@ -13,12 +13,9 @@
     {
       "src": "/static/(.*)",
       "dest": "/staticfiles/$1",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "max-age=31536000"
-        }
-      ]
+      "headers": {
+        "Cache-Control": "max-age=31536000"
+      }
     },
     {
       "src": "/media/(.*)",
@@ -30,3 +27,4 @@
     }
   ]
 }
+
