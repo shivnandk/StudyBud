@@ -62,17 +62,26 @@ WSGI_APPLICATION = 'studybud.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-DATABASES = {
+# DATABASES = {
+#     'default': {
+#        'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'studybud',
+#         'USER': 'root',
+#         'PASSWORD': '1234',  # Replace with your MySQL password
+#         'HOST': '35.188.60.116',  # Connection name from Google Cloud
+#         'PORT': '3306',
+#     }
+# }
+ DATABASES = {
     'default': {
-       'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'studybud',
-        'USER': 'root',
-        'PASSWORD': '1234',  # Replace with your MySQL password
-        'HOST': '35.188.60.116',  # Connection name from Google Cloud
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': os.getenv('DB_NAME', 'studybud'),
+        'USER': os.getenv('DB_USER', 'root'),
+        'PASSWORD': os.getenv('DB_PASSWORD', '1234'),
+        'HOST': os.getenv('DB_HOST', '35.188.60.116'),  # Replace with your actual host if different
+        'PORT': os.getenv('DB_PORT', '3306'),
     }
 }
- 
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
