@@ -6,12 +6,8 @@
       "use": "@vercel/python",
       "config": {
         "maxLambdaSize": "15mb",
-        "runtime": "python3.12"  // Update to the Python version you're using
+        "runtime": "python3.12"  // Adjust the Python version as necessary
       }
-    },
-    {
-      "src": "staticfiles/**/*",
-      "use": "@vercel/static"
     }
   ],
   "routes": [
