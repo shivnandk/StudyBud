@@ -6,7 +6,7 @@
       "use": "@vercel/python",
       "config": {
         "maxLambdaSize": "15mb",
-        "runtime": "python3.12"  // Updated to Python 3.12
+        "runtime": "python3.12"  // Adjust this to the Python version you are using
       }
     }
   ],
