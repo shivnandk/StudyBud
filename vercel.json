@@ -2,24 +2,25 @@
   "version": 2,
   "builds": [
     {
-      "src": "manage.py",
+      "src": "studybud/wsgi.py",
       "use": "@vercel/python",
       "config": {
         "maxLambdaSize": "15mb",
-        "runtime": "python3.12"   
+        "runtime": "python3.12"  // Update to the Python version you're using
       }
+    },
+    {
+      "src": "staticfiles/**/*",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/static/(.*)",
       "dest": "/staticfiles/$1",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "max-age=31536000"
-        }
-      ]
+      "headers": {
+        "Cache-Control": "max-age=31536000"
+      }
     },
     {
       "src": "/media/(.*)",
@@ -27,7 +28,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "studybud/wsgi.py"   
+      "dest": "studybud/wsgi.py"
     }
   ]
 }
