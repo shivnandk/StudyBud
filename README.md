@@ -45,22 +45,22 @@ StudyBud is a Django-based web application designed to help students create stud
 ![Home Page](project_images/Homepage.png) 
 
 ### Login Page  
-![Login Page](screenshots/login_page.png)  
+![Login Page](project_images/login.png)  
 
 ### Registration Page  
-![Registration Page](screenshots/registration_page.png)  
+![Registration Page](project_images/registration)  
 
 ### Create Room Page  
-![Create Room Page](screenshots/create_room.png)  
+![Create Room Page](project_images/create_room.png)  
 
 ### Profile Page  
-![Profile Page](screenshots/profile_page.png)  
+![Profile Page](project_images/profile.png)  
 
 ### Room Page  
-![Room Page](screenshots/room.png)  
+![Room Page](project_images/room.png)  
 
 ### Edit Profile Page  
-![Edit Profile Page](screenshots/edit_profile.png)  
+![Edit Profile Page](project_images/edit profile.png)  
 
 ---
 
