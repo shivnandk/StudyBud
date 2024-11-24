@@ -181,5 +181,4 @@ This project is licensed under the [MIT License](LICENSE).
 Feel free to star ⭐ the repository if you find this project useful!  
 
 ---
-
-Replace the placeholder paths for screenshots (e.g., `screenshots/homepage.png`) with the correct relative paths if necessary. Ensure that your screenshots are in the `screenshots` directory, which is in the same level as your README file.
+ 
